@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  padding: 15px 20px 14px;
+  border-radius: 22px;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.btn_purple {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #fff; }
+
+.btn_purple:hover {
+  opacity: 0.5; }
+
+.btn_purple-border {
+  box-sizing: border-box;
+  border: 2px solid #bc9cff;
+  background: #fff;
+  color: #bc9cff; }
+
+.btn_purple-border:hover {
+  border-color: rgba(188, 156, 255, 0.5); }
