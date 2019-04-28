@@ -23,3 +23,6 @@
 
 .btn_purple-border:hover {
   border-color: rgba(188, 156, 255, 0.5); }
+
+#range-slider {
+  height: 320px; }

@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -31,6 +32,18 @@ plugins: [
  new HtmlWebpackPlugin({
 	 filename: 'index.html',
 	 template: './source/layout.pug'
- })
-]
+ }),
+ new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  'window.jQuery': 'jquery'
+})
+],
+resolve: {
+  alias:{
+    'jquery-ui-dist':'jquery-ui-dist/jquery-ui.js',
+    'jquery-ui':'jquery-ui/jquery-ui.js',
+    modules:path.join(__dirname, 'node_modules')
+  }
+}
 };

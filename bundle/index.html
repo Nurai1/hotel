@@ -24,7 +24,19 @@
 </linearGradient>
 </defs>
 </svg>
-    <div class="btn btn_purple">click me</div>
-    <div class="btn btn_purple-border">click me</div>
+    <div>buttons
+      <div class="btn btn_purple">click me</div>
+      <div class="btn btn_purple-border">click me</div>
+    </div>
+<script>require("jquery-ui-dist");
+require("jquery-ui");
+$('#range-slider').slider({
+  animate:'slow',
+  range:'min',
+  value:50
+});
+
+</script>
+<div id="range-slider"></div>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
