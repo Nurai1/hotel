@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const path = require('path');
 
 module.exports = {
@@ -24,7 +25,11 @@ module: {
 	  options: {
 		  pretty: true
 	  }
-    }
+  },
+     {
+        test: /\.css$/,
+         use: [ 'style-loader', 'css-loader' ]
+       }
   ]
 },
 plugins: [
@@ -42,8 +47,7 @@ plugins: [
 resolve: {
   alias:{
     'jquery-ui-dist':'jquery-ui-dist/jquery-ui.js',
-    'jquery-ui':'jquery-ui/jquery-ui.js',
-    modules:path.join(__dirname, 'node_modules')
+    'slider-ui':'jquery-ui/ui/widgets/slider.js'
   }
 }
 };
