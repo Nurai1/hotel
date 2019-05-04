@@ -22,9 +22,11 @@
     "pug-loader": "^2.4.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack-cli": "^3.3.1"
   },
   "dependencies": {
+    "file-loader": "^3.0.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "jquery-ui-dist": "^1.12.1",

@@ -29,7 +29,15 @@ module: {
      {
         test: /\.css$/,
          use: [ 'style-loader', 'css-loader' ]
+       },
+       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+         loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts',
        }
+     }
   ]
 },
 plugins: [
@@ -46,7 +54,7 @@ plugins: [
 ],
 resolve: {
   alias:{
-    'jquery-ui-dist':'jquery-ui-dist/jquery-ui.js',
+    'slider-styles':'jquery-ui/themes/base/slider.css',
     'slider-ui':'jquery-ui/ui/widgets/slider.js'
   }
 }

@@ -11432,10 +11432,10 @@ return $.widget;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_scss__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_range_slider_range_slider_scss__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_range_slider_range_slider_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__blocks_range_slider_range_slider_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_scss__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fonts_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_scss__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layout_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_range_slider_range_slider_js__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_range_slider_range_slider_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__blocks_range_slider_range_slider_js__);
 __webpack_require__(4);
@@ -13215,10 +13215,10 @@ $(".price-range__slider").slider({
            max: 15000,
        values: [ 5000, 10000 ],
        slide : function(event, ui) {
-           $(".price-range__slider-result").text(ui.values[ 0 ] + "Р - " + ui.values[ 1 ]+"Р" );
+           $(".price-range__slider-result").text(ui.values[ 0 ] + "₽ - " + ui.values[ 1 ]+"₽" );
        }
    });
-   $( ".price-range__slider-result" ).text($(".price-range__slider").slider("values", 0) + "P - " + $(".price-range__slider").slider("values", 1)+"Р");
+   $( ".price-range__slider-result" ).text($(".price-range__slider").slider("values", 0) + "₽ - " + $(".price-range__slider").slider("values", 1)+"₽");
 });
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
