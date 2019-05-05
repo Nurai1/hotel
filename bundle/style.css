@@ -25,7 +25,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.25); }
+  color: rgba(31, 32, 65, 0.75); }
 
 .btn {
   display: inline-block;
@@ -121,3 +121,32 @@ body {
   height: 6px;
   border: 0;
   box-sizing: border-box; }
+
+.pagination-wrapper {
+  display: inline-block;
+  width: 281px; }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  list-style-type: none; }
+  .pagination li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5); }
+    .pagination li span {
+      position: relative;
+      top: 7px; }
+    .pagination li svg {
+      position: relative;
+      top: 10px; }
+  .pagination .pagination__active-item {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 20px;
+    color: #fff; }
+  .pagination .pagination__arrow-item {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 20px; }
