@@ -1,0 +1,32 @@
+text-field-wrapper{
+  display: inline-block;
+  width:320px;
+}
+
+.text-field{
+  width:320px;
+  height:44px;
+  background: #FFFFFF;
+  border: 1px solid fade-out($dark-shade,.75);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left:15px;
+  color: fade-out($dark-shade,.75);
+  outline: 0;
+}
+
+.text-field:hover, .text-field:focus{
+  border-color: fade-out($dark-shade,.5);
+  color: fade-out($dark-shade,.25);
+}
+
+.text-field::placeholder{
+  font-size: 14px;
+  line-height: 18px;
+  color: fade-out($dark-shade,.75);
+}
+
+.text-label{
+  text-transform: uppercase;
+  color: #1F2041;
+}
