@@ -22,6 +22,7 @@
     float:right;
     width:44px;
     height:44px;
+    cursor: pointer;
     padding:14px 16px;
     margin-top: -12px;
   }
@@ -73,6 +74,7 @@
         line-height: 22px;
         color: fade-out($dark-shade,.5);
         font-weight: normal;
+        cursor: pointer;
         margin-left:14.5px;
       }
 
@@ -93,5 +95,6 @@
     justify-content: space-between;
     margin-top:32px;
     color: fade-out($dark-shade,.5);
+    cursor:pointer;
   }
 }

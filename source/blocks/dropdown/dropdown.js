@@ -69,6 +69,21 @@ $('.babies-plus').click(function(){
   $('.babies-minus').css("color","rgba(31, 32, 65, 0.5)");
 });
 
+var sumOfGuests;
+
+var writeCountGuests = function (){
+  sumOfGuests=sumOfAdults+sumOfKids+sumOfBabies;
+  if((sumOfGuests>4) || (sumOfGuests==0))
+    $('.btn-dropdown-text').text(sumOfGuests+' гостей');
+  else if((sumOfGuests<=4) && (sumOfGuests>1))
+    $('.btn-dropdown-text').text(sumOfGuests+' гостя');
+  else
+    $('.btn-dropdown-text').text(sumOfGuests+' гость');
+}
+
+$('.dropdown__minus-circle').click(writeCountGuests);
+$('.dropdown__plus-circle').click(writeCountGuests);
+
 $('.bottom-btns__btn-clear-all').click(function(){
   sumOfAdults=0;
   sumOfKids=0;
@@ -78,4 +93,5 @@ $('.bottom-btns__btn-clear-all').click(function(){
   $('.adults-count').text(sumOfAdults);
   $('.kids-count').text(sumOfKids);
   $('.babies-count').text(sumOfBabies);
+  writeCountGuests();
 });

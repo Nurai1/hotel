@@ -1,0 +1,76 @@
+.date{
+  margin-top:250px;
+}
+
+.ui-datepicker{
+  background: #FFFFFF;
+  width:320px;
+  height:369px;
+  color: $purple;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: 1px solid fade-out($dark-shade,.75);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px fade-out($dark-shade,.95);
+  border-radius: 4px;
+
+
+  .ui-datepicker-prev, .ui-datepicker-next{
+    //стрелки с помощью иконок
+  }
+
+  .ui-datepicker-title{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    color: $dark-shade;
+    margin:20px auto 30px;
+  }
+
+  td{
+    width:40px;
+    height:40px;
+    padding:0;
+
+    .ui-state-default{
+      width:40px;
+      height:40px;
+      box-sizing: border-box;
+      color: fade-out($dark-shade,.5);
+      padding-top: 13px;
+    }
+  }
+
+  .ui-datepicker-today a{
+    background: $green-gradient;
+    border-radius: 20px;
+    color:#fff;
+  }
+
+  .ui-datepicker-other-month .ui-state-default{
+    color: fade-out($dark-shade,.75);
+  }
+
+  .ui-state-active.ui-state-default{
+    background: $purple-gradient;
+    border-radius: 20px;
+    color:#fff;
+  }
+
+  table {
+    font-weight: normal;
+
+    th{
+      width:40px;
+      height:40px;
+      padding-top: 13px;
+      box-sizing: border-box;
+    }
+  }
+}
