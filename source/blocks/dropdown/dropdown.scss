@@ -5,8 +5,6 @@
 
 .btn-dropdown{
   display:inline-block;
-  width:320px;
-  height: 45px;
   background: #FFFFFF;
   font-size: 14px;
   line-height: 18px;
@@ -18,13 +16,28 @@
   border-top-right-radius:2px;
   margin-top: 20px;
 
-  svg{
+  .btn-dropdown-text{
+    color: fade-out($dark-shade, .25);
+  }
+
+  .btn-dropdown__arrow{
+    display:flex;
+    align-items: center;
+    text-align: center;
     float:right;
     width:44px;
     height:44px;
     cursor: pointer;
-    padding:14px 16px;
-    margin-top: -12px;
+    // Иконки под разные браузера
+    font-family: 'Material Icons';
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    @include material-icon('arrow_forward_ios');
+    transform: rotateZ(90deg);
+    margin-top: 3px;
   }
 }
 
@@ -40,8 +53,6 @@
 
 .dropdown{
   display:none;
-  width:320px;
-  height:159px;
   background: #FFFFFF;
   border: 1px solid fade-out($dark-shade,.5);
   border-top:0px;
@@ -89,12 +100,5 @@
         width:30px;
       }
     }
-  }
-  .dropdown__bottom-btns{
-    display:flex;
-    justify-content: space-between;
-    margin-top:32px;
-    color: fade-out($dark-shade,.5);
-    cursor:pointer;
   }
 }

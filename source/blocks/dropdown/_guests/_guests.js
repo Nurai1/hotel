@@ -1,15 +1,19 @@
-$('.btn-dropdown').addClass('btn-dropdown_border-bottom');
+$('.btn-dropdown_guests').addClass('btn-dropdown_border-bottom');
 
-$('svg').click(function(){
-  $('.dropdown').slideToggle();
+$('.btn-dropdown_guests__arrow').click(function(){
+  $('.dropdown_guests').slideToggle();
+  $('.bottom-btns__btn-apply').click(function(){
+    $('.dropdown_guests').slideUp();
+  });
 
-  if($('.btn-dropdown').hasClass('btn-dropdown_border-bottom')){
-    $('.btn-dropdown').removeClass('btn-dropdown_border-bottom').addClass('btn-dropdown_border-bottom-off');
+  if($('.btn-dropdown_guests').hasClass('btn-dropdown_border-bottom')){
+    $('.btn-dropdown_guests').removeClass('btn-dropdown_border-bottom').addClass('btn-dropdown_border-bottom-off');
   }
   else{
-    $('.btn-dropdown').removeClass('btn-dropdown_border-bottom-off').addClass('btn-dropdown_border-bottom');
+    $('.btn-dropdown_guests').removeClass('btn-dropdown_border-bottom-off').addClass('btn-dropdown_border-bottom');
   }
 });
+
 
 var sumOfAdults=0;
 var sumOfKids=0;
@@ -74,11 +78,11 @@ var sumOfGuests;
 var writeCountGuests = function (){
   sumOfGuests=sumOfAdults+sumOfKids+sumOfBabies;
   if((sumOfGuests>4) || (sumOfGuests==0))
-    $('.btn-dropdown-text').text(sumOfGuests+' гостей');
+    $('.btn-dropdown_guests-text').text(sumOfGuests+' гостей');
   else if((sumOfGuests<=4) && (sumOfGuests>1))
-    $('.btn-dropdown-text').text(sumOfGuests+' гостя');
+    $('.btn-dropdown_guests-text').text(sumOfGuests+' гостя');
   else
-    $('.btn-dropdown-text').text(sumOfGuests+' гость');
+    $('.btn-dropdown_guests-text').text(sumOfGuests+' гость');
 }
 
 $('.dropdown__minus-circle').click(writeCountGuests);

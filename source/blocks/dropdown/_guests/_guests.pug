@@ -1,8 +1,8 @@
 div(class="dropdown-wrapper")
-  a(class="btn-dropdown") 
-    span(class='btn-dropdown-text') Сколько гостей
-    span(class="btn-dropdown__arrow")
-  ul(class='dropdown') 
+  a(class="btn-dropdown btn-dropdown_guests") 
+    span(class='btn-dropdown__text btn-dropdown_guests-text') Сколько гостей
+    span(class="btn-dropdown__arrow btn-dropdown_guests__arrow")
+  ul(class='dropdown dropdown_guests') 
     li взрослые 
       div(class="dropdown__btns-wrapper")
         span(class="dropdown__minus-circle adults-minus") -
@@ -19,6 +19,6 @@ div(class="dropdown-wrapper")
         span(class="dropdown__count babies-count") 0
         span(class="dropdown__plus-circle babies-plus") +
     li 
-      div(class="dropdown__bottom-btns")
+      div(class="dropdown_guests__bottom-btns")
         span(class="bottom-btns__btn-clear-all") очистить
         span(class="bottom-btns__btn-apply") применить

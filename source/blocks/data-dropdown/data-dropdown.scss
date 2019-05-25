@@ -1,7 +1,43 @@
-.date{
-  margin-top:250px;
+.date-dropdown-wrapper{
+  width:320px;
+  height:369px;
 }
 
+.datep{
+  width:150px;
+}
+
+.dateFrom{
+  margin-right:16px;
+}
+
+.range-datepicker{
+  margin-top:5.56px;
+  width:320px;
+  height:369px;
+
+  .datepicker{
+    box-sizing: border-box;
+    width:320px;
+    height:369px;
+  }
+}
+
+.datepicker.-bottom-left-{
+  box-sizing: border-box;
+  width:320px;
+  height:369px;
+  margin-top:-4.44px;
+
+
+  i.datepicker--pointer{
+    width:0;
+    height:0;
+  }
+}
+
+/****** ui-datepicker
+*******
 .ui-datepicker{
   background: #FFFFFF;
   width:320px;
@@ -16,11 +52,41 @@
   box-sizing: border-box;
   box-shadow: 0px 10px 20px fade-out($dark-shade,.95);
   border-radius: 4px;
+  padding:0;
 
-
-  .ui-datepicker-prev, .ui-datepicker-next{
-    //стрелки с помощью иконок
+  a.ui-corner-all.ui-datepicker-prev, a.ui-corner-all.ui-datepicker-next{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+    width:24px;
+    height:24px;
+    padding:0;
   }
+
+    a.ui-corner-all.ui-datepicker-next{
+      @include material-icon('arrow_forward');
+      margin-right:19px;
+      margin-top:19px;
+    }
+
+    a.ui-corner-all.ui-datepicker-prev{
+      @include material-icon('arrow_back');
+      margin-left:19px;
+      margin-top:19px;
+    }
 
   .ui-datepicker-title{
     font-family: Quicksand;
@@ -73,4 +139,26 @@
       box-sizing: border-box;
     }
   }
+
+  .ui-datepicker-buttonpane{
+    button{
+      border:0;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      background: none;
+      outline:0;
+    }
+
+    .ui-datepicker-current{
+      color: fade-out($dark-shade,.5);
+    }
+
+    .ui-datepicker-close{
+      color: $purple;
+    }
+  }
 }
+
+*/

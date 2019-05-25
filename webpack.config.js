@@ -57,8 +57,7 @@ plugins: [
 ],
 resolve: {
   alias:{
-    'slider-styles':'jquery-ui/themes/base/slider.css',
-    'slider-ui':'jquery-ui/ui/widgets/slider.js'
+    
   }
 }
 };

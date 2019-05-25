@@ -54,10 +54,8 @@
   <label class="text-label">email</label>
   <input class="text-field" placeholder="Email">
 </div>
-<div class="dropdown-wrapper"><a class="btn-dropdown"> <span class="btn-dropdown-text">Сколько гостей</span><svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#1F2041" fill-opacity="0.75"/>
-</svg></a>
-  <ul class="dropdown"> 
+<div class="dropdown-wrapper"><a class="btn-dropdown btn-dropdown_guests"> <span class="btn-dropdown__text btn-dropdown_guests-text">Сколько гостей</span><span class="btn-dropdown__arrow btn-dropdown_guests__arrow"></span></a>
+  <ul class="dropdown dropdown_guests"> 
     <li>взрослые 
       <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle adults-minus">-</span><span class="dropdown__count adults-count">0</span><span class="dropdown__plus-circle adults-plus">+</span></div>
     </li>
@@ -68,17 +66,72 @@
       <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle babies-minus">-</span><span class="dropdown__count babies-count">0</span><span class="dropdown__plus-circle babies-plus">+</span></div>
     </li>
     <li> 
-      <div class="dropdown__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
+      <div class="dropdown_guests__bottom-btns"><span class="bottom-btns__btn-clear-all">очистить</span><span class="bottom-btns__btn-apply">применить</span></div>
     </li>
   </ul>
 </div>
-<p class="date">Date: 
-  <input type="text" id="datep">
+<div class="dropdown-wrapper">
+  <div class="btn-dropdown btn-dropdown_features"> 
+    <div class="btn-dropdown-text btn-dropdown_features-text"> <span class="btn-dropdown_features-text__bedroom-count">2</span><span class="btn-dropdown_features-text__bedroom-word">&nbspспальни, </span><span class="btn-dropdown_features-text__bed-count">2</span><span class="btn-dropdown_features-text__bed-word">&nbspкровати...</span></div>
+    <div class="btn-dropdown__arrow btn-dropdown_features__arrow"></div>
+  </div>
+  <ul class="dropdown dropdown_features"> 
+    <li>спальни 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bedroom-minus">-</span><span class="dropdown__count bedroom-count">2</span><span class="dropdown__plus-circle bedroom-plus">+</span></div>
+    </li>
+    <li>кровати 
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bed-minus">-</span><span class="dropdown__count bed-count">2</span><span class="dropdown__plus-circle bed-plus">+</span></div>
+    </li>
+    <li>ванные комнаты
+      <div class="dropdown__btns-wrapper"><span class="dropdown__minus-circle bathroom-minus">-</span><span class="dropdown__count bathroom-count">0</span><span class="dropdown__plus-circle bathroom-plus">+</span></div>
+    </li>
+  </ul>
+</div>
+<div class="date-dropdown-wrapper"> 
+  <input class="dateFrom datep" type="text">
+  <input class="dateTo datep" type="text">
+  <!--div(class="range-datepicker")-->
   <!--  <label for="from">From</label>
   <input type="text" id="from" name="from">
   <label for="to">to</label>
   <input type="text" id="to" name="to">
   -->
-</p>
+</div>
+<div class="checkbox">
+  <p class="checkbox__text">checkbox buttons</p>
+  <div class="checkbox-wrapper">
+    <input type="checkbox" id="smoke">
+    <label class="checkbox__btn" for="smoke">Можно курить</label>
+  </div>
+  <div class="checkbox-wrapper">
+    <input type="checkbox" id="pet" checked>
+    <label class="checkbox__btn" for="pet">Можно с питомцами</label>
+  </div>
+  <div class="checkbox-wrapper">
+    <input type="checkbox" id="guests" checked>
+    <label class="checkbox__btn" for="guests">Можно пригласить гостей<br>(до 10 человек)</label>
+  </div>
+</div>
+<div class="radio-btns">
+  <p class="radio-btns__text">checkbox buttons</p>
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="man" name="radio" checked>
+    <label class="radio-btns__btn" for="man">Мужчина</label>
+  </div>
+  <div class="radio-btns-wrapper">
+    <input type="radio" id="woman" name="radio">
+    <label class="radio-btns__btn" for="woman">Женщина</label>
+  </div>
+</div>
+<div class="toggle">
+  <p class="toggle__text">toggle</p>
+  <div class="toggle-wrapper">
+    <input type="checkbox" id="specialOffer" checked>
+    <label class="toggle__btn" for="specialOffer">Получать спецпредложения</label>
+  </div>
+</div>
+<div class="like-btn"> <span class="like-btn__heart"> </span><span class="like-btn__sum">0 </span></div>
+<div class="rate-btn"><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span><span class="rate-btn__star"> </span>
+</div>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
