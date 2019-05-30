@@ -4,3 +4,4 @@ import './dropdown/_features/_features.js';
 import './data-dropdown/data-dropdown.js';
 import './like-btn/like-btn.js';
 import './rate-btn/rate-btn.js';
+import './checkbox/expandable-checkbox/expandable-checkbox.js';

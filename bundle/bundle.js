@@ -11436,7 +11436,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fonts_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fonts_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_scss__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_joinAll_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_joinAll_js__ = __webpack_require__(14);
 __webpack_require__(0);
 __webpack_require__(4);
 __webpack_require__(8);
@@ -12564,6 +12564,34 @@ this.maxHours=t.getHours(),this.maxMinutes=t.getMinutes(),this.d.lastSelectedDat
 
 /***/ }),
 /* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js__);
+
+
+
+
+
+
+
+
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
@@ -12584,120 +12612,7 @@ $(".price-range__slider").slider({
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */,
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$( function() {
-  // $.datepicker.setDefaults($.datepicker.regional['ru']);
- $('.datep, .range-datepicker').datepicker({
-     showOtherMonths: true,
-      dateFormat: 'dd.mm.yy',
-      miltipleDates:true,
-      range: true
-    });
-    //  $('.dateFrom').datepicker( "setDate", "+1w");
-
-    $('.dateFrom').change(function(){
-        var minDate = $('.dateFrom').val();
-        if ($('.dateTo').val()=='')
-        //  $('.dateTo').datepicker( "setDate", minDate);
-
-        $('.dateTo').datepicker({minDate: minDate});
-    });
-
-    $('.dateTo').change(function(){
-        var maxDate = $('.dateTo').val();
-        $('.dateFrom').datepicker({maxDate: maxDate});
-    });
-})
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
-  var sumOfHearts = $('.like-btn__sum').text();
-  $('.like-btn').click(function(){
-    sumOfHearts++;
-    $('.like-btn__sum').text(sumOfHearts);
-    $(this).addClass('like-btn_active');
-  });
-});
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 45 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__range_slider_range_slider_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__);
-
-
-
-
-
-
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
-  $('.rate-btn__star').click(function(){
-    $(this).addClass('rate-btn__star_active');
-    $(this).prevAll().each(function(){
-      $(this).addClass('rate-btn__star_active');
-    });
-  });
-});
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$('.btn-dropdown_guests').addClass('btn-dropdown_border-bottom');
@@ -12805,7 +12720,7 @@ $('.bottom-btns__btn-clear-all').click(function(){
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 48 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$('.btn-dropdown_features').addClass('btn-dropdown_border-bottom');
@@ -12904,6 +12819,106 @@ $('.bed-minus, .bed-plus').click(function(){
     $('.btn-dropdown_features-text__bed-word').text(' кровати...');
   else if (sumOfbed==1)
     $('.btn-dropdown_features-text__bed-word').text(' кровать...');
+});
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$( function() {
+  // $.datepicker.setDefaults($.datepicker.regional['ru']);
+ $('.datep, .range-datepicker').datepicker({
+     showOtherMonths: true,
+      dateFormat: 'dd.mm.yy',
+      miltipleDates:true,
+      range: true
+    });
+    //  $('.dateFrom').datepicker( "setDate", "+1w");
+
+    $('.dateFrom').change(function(){
+        var minDate = $('.dateFrom').val();
+        if ($('.dateTo').val()=='')
+        //  $('.dateTo').datepicker( "setDate", minDate);
+
+        $('.dateTo').datepicker({minDate: minDate});
+    });
+
+    $('.dateTo').change(function(){
+        var maxDate = $('.dateTo').val();
+        $('.dateFrom').datepicker({maxDate: maxDate});
+    });
+})
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
+  var sumOfHearts = $('.like-btn__sum').text();
+  $('.like-btn').click(function(){
+    sumOfHearts++;
+    $('.like-btn__sum').text(sumOfHearts);
+    $(this).addClass('like-btn_active');
+  });
+});
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function(){
+  $('.rate-btn__star').click(function(){
+    $(this).addClass('rate-btn__star_active');
+    $(this).prevAll().each(function(){
+      $(this).addClass('rate-btn__star_active');
+    });
+  });
+});
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {  var rotateArrow = 90;
+$('.checkbox__text__arrow').click(function(){
+  $('.expandable-checkbox-wrapper').slideToggle();
+  rotateArrow+=180;
+  $(this).css('transform', 'rotateZ('+rotateArrow+'deg)');
 });
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
