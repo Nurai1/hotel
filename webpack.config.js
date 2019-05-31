@@ -40,7 +40,15 @@ module: {
             name: '[name].[ext]',
             outputPath: 'fonts',
        }
+     },
+     {
+      test: /\.(jpe?g|png|gif|svg)$/i,
+       loader: 'file-loader?limit=1024',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images',
      }
+   },
   ]
 },
 plugins: [
@@ -57,7 +65,7 @@ plugins: [
 ],
 resolve: {
   alias:{
-    
+
   }
 }
 };

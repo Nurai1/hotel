@@ -6,11 +6,13 @@
   border: 1px solid fade-out($dark-shade, .75);
   border-radius: 10px;
   cursor:pointer;
-  display:flex;
-  align-items: center;
-  text-align: center;
+  display:inline-block;
+
 
   .like-btn__sum{
+    text-align: center;
+    position:relative;
+    top: -3px;
     width:6px;
     height:13px;
     font-size: 10px;
@@ -22,6 +24,9 @@
   .like-btn__heart{
     width:20px;
     heght:20px;
+    text-align: center;
+    position:relative;
+    top:-2px;
     font-size: 10px;
     line-height: 9px;
     display: inline-block;
@@ -41,7 +46,7 @@
   border-color: $purple;
 
   .like-btn__sum{
-    color: $purple;  
+    color: $purple;
   }
 
   .like-btn__heart{
