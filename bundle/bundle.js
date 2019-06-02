@@ -12846,27 +12846,38 @@ $('.bed-minus, .bed-plus').click(function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$( function() {
-  // $.datepicker.setDefaults($.datepicker.regional['ru']);
- $('.datep, .range-datepicker').datepicker({
+//***datepicker styles
+    $('.datepicker--nav-action > svg').hide();
+
+  //***datepicker options
+ $('.date-dropdown__calendar').datepicker({
      showOtherMonths: true,
       dateFormat: 'dd.mm.yy',
       miltipleDates:true,
-      range: true
+      range: true,
+      multipleDatesSeparator: '-',
+      minDate: new Date()
     });
-    //  $('.dateFrom').datepicker( "setDate", "+1w");
+    //$('.date-dropdown__calendar').hide();
 
-    $('.dateFrom').change(function(){
-        var minDate = $('.dateFrom').val();
-        if ($('.dateTo').val()=='')
-        //  $('.dateTo').datepicker( "setDate", minDate);
+  $('.dateFrom').focus(function(){
+    $('.date-dropdown__calendar').show();
+  });
 
-        $('.dateTo').datepicker({minDate: minDate});
-    });
 
-    $('.dateTo').change(function(){
-        var maxDate = $('.dateTo').val();
-        $('.dateFrom').datepicker({maxDate: maxDate});
-    });
+     $('.date-dropdown__calendar').datepicker({
+       onSelect: function(formattedDate){
+                if((formattedDate.length>13) && (~formattedDate.indexOf('-'))){
+                var endFirstDate = formattedDate.indexOf('-');
+                var firstDate = formattedDate.slice(0, endFirstDate);
+                var secondDate = formattedDate.slice(++endFirstDate);
+                  $('.dateFrom').val(firstDate);
+                  $('.dateTo').val(secondDate);
+              }
+          }
+     })
+
+
 })
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
