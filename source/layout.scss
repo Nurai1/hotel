@@ -26,3 +26,6 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './blocks/bullet-list/bullet-list.scss';
 @import './blocks/icon-text-list/icon-text-list.scss';
 @import './blocks/comment/comment.scss';
+
+//**UI Kit: расположение form elements
+@import './UI kit/FormElements.scss';

@@ -1,8 +1,11 @@
-.form-el{
-  width:100%;
+//**UI Kit: расположение form elements
+
+.logo{
+  margin: 30px 63px 65px 30px;
 }
 
 .form-el__wrapper{
-  width:1260/1440*100%;
-  margin-left:140px/1440px*100%;
+  width:1260px;
+  margin-left:140px;
+  display:flex;
 }

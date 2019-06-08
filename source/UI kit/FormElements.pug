@@ -1,7 +1,42 @@
+mixin form-el-container(title, additional)
+  .form-el-container
+    span.form-el-container__title= title
+    span.form-el-container__additional-word= additional  
+    <br>
+    block  
+
 div(class="form-el")
-  div(class="form-el__logo")
+  include ./../blocks/logo/logo.pug
   div(class="form-el__wrapper")
     div(class="form-el__wrapper__first-col")
+      +form-el-container("text field", 'default')
+        include ./../blocks/text-field/text-field.pug	
+      include ./../blocks/text-field/text-field.pug	
+      include ./../blocks/dropdown/_guests/_guests.pug	
+      include ./../blocks/text-field/text-field_masked.pug	
+      include ./../blocks/date-dropdown/date-dropdown.pug
+      include ./../blocks/date-dropdown/date-dropdown--filter.pug
+      include ./../blocks/text-field/text-field_sub.pug
+      include ./../blocks/dropdown/_features/_features.pug	
+      include ./../blocks/checkbox/expandable-checkbox/expandable-checkbox.pug
+      include ./../blocks/checkbox/expandable-checkbox/expandable-checkbox.pug
+      include ./../blocks/icon-text-list/icon-text-list.pug
     div(class="form-el__wrapper__second-col")
+      include ./../blocks/checkbox/checkbox.pug
+      include ./../blocks/radio-btns/radio-btns.pug
+      include ./../blocks/toggle/toggle.pug
+      include ./../blocks/toggle/toggle.pug
+      include ./../blocks/like-btn/like-btn.pug
+      +form-el-container("rate button")
+        include ./../blocks/rate-btn/rate-btn.pug
+        include ./../blocks/rate-btn/rate-btn.pug
+      include ./../blocks/dropdown/_guests/_guests.pug	   
+      include ./../blocks/checkbox/rich-checkbox/rich-checkbox.pug 
     div(class="form-el__wrapper__third-col")
-    div(class="form-el__wrapper__comment")
+      include ./../blocks/range-slider/range-slider.pug
+      include ./../blocks/buttons/buttons.pug
+      include ./../blocks/buttons/btn_with-arrow/btn_with-arrow.pug
+      include ./../blocks/pagination/pagination.pug
+      include ./../blocks/dropdown/_guests/_guests.pug
+      include ./../blocks/bullet-list/bullet-list.pug
+    include ./../blocks/comment/comment.pug

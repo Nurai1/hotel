@@ -23,3 +23,28 @@ $green: #6FCF97;
   text-transform: uppercase;
   color: #1F2041;
 }
+
+.form-el-container__title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.form-el-container__additional-word{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  float: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.form-el-container{
+  display: inline-block;
+}
