@@ -1,9 +1,17 @@
-text-field-wrapper{
-  display: inline-block;
+.text-field{
   width:320px;
+  display: inline-block;
 }
 
-.text-field{
+.text-field__text{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-shade;
+}
+
+.text-field__input{
   width:320px;
   height:44px;
   background: #FFFFFF;
@@ -15,18 +23,13 @@ text-field-wrapper{
   outline: 0;
 }
 
-.text-field:hover, .text-field:focus{
+.text-field__input:hover, .text-field__input:focus{
   border-color: fade-out($dark-shade,.5);
   color: fade-out($dark-shade,.25);
 }
 
-.text-field::placeholder{
+.text-field__input::placeholder{
   font-size: 14px;
   line-height: 18px;
   color: fade-out($dark-shade,.75);
-}
-
-.text-label{
-  text-transform: uppercase;
-  color: #1F2041;
 }

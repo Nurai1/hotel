@@ -11441,8 +11441,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_require__(0);
 __webpack_require__(4);
 __webpack_require__(8);
-//require("jquery-ui/ui/i18n/datepicker-ru.js");
-//require("jquery-ui/themes/base/datepicker.css");
 __webpack_require__(9);
 __webpack_require__(10);
 __webpack_require__(11);
@@ -12591,8 +12589,8 @@ module.exports = __webpack_require__.p + "images/comment-author.png";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dropdown_guests_guests_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dropdown_features_features_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_dropdown_data_dropdown_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__date_dropdown_date_dropdown_js__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__date_dropdown_date_dropdown_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__date_dropdown_date_dropdown_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__ = __webpack_require__(22);
@@ -12846,25 +12844,38 @@ $('.bed-minus, .bed-plus').click(function(){
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {$( function() {
-//***datepicker styles
-    $('.datepicker--nav-action > svg').hide();
-
-  //***datepicker options
  $('.date-dropdown__calendar').datepicker({
      showOtherMonths: true,
       dateFormat: 'dd.mm.yy',
       miltipleDates:true,
       range: true,
       multipleDatesSeparator: '-',
-      minDate: new Date()
-    });
-    //$('.date-dropdown__calendar').hide();
+      minDate: new Date(),
+      clearButton: true
 
-  $('.dateFrom').focus(function(){
+    });
+
+  //**скрыть блок календаря
+  $('.date-dropdown__calendar').hide();
+  //**показать календарь при нажатии на текстовые поля или стрелку
+  $('.dateFrom, .dateTo').focus(function(){
     $('.date-dropdown__calendar').show();
   });
+  $('.date-dropdown__part > .date-dropdown__part__arrow').click(function(){
+    $('.date-dropdown__calendar').show();
+  });
+  //**блок фунционала кнопок
+  $('.datepicker--button').first().text('очистить').addClass('datepicker--button-clear');
+  $('.datepicker--buttons').append('<span class="datepicker--button-ready">применить</span>');
 
+  $('.datepicker--button-clear').click(function(){
+    $('.dateFrom, .dateTo').val('');
+  });
 
+  $('.datepicker--button-ready').click(function(){
+    $('.date-dropdown__calendar').hide();
+  });
+      //**функция, добавляющая даты в поля
      $('.date-dropdown__calendar').datepicker({
        onSelect: function(formattedDate){
                 if((formattedDate.length>13) && (~formattedDate.indexOf('-'))){
@@ -12876,7 +12887,6 @@ $('.bed-minus, .bed-plus').click(function(){
               }
           }
      })
-
 
 })
 

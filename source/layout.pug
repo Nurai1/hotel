@@ -4,18 +4,18 @@ html
 		meta(charset = 'utf-8')
 		title Pug file
 	body
-		h1 test pug
 		include ./blocks/logo/logo.pug
-		div buttons
-			div(class = 'btn btn_purple') click me
-			div(class = 'btn btn_purple-border') click me
+		include ./blocks/buttons/buttons.pug
 		include ./blocks/range-slider/range-slider.pug
 		include ./blocks/buttons/btn_with-arrow/btn_with-arrow.pug
 		include ./blocks/pagination/pagination.pug
 		include ./blocks/text-field/text-field.pug	
+		include ./blocks/text-field/text-field_sub.pug		
+		include ./blocks/text-field/text-field_masked.pug	
 		include ./blocks/dropdown/_guests/_guests.pug	
 		include ./blocks/dropdown/_features/_features.pug	
-		include ./blocks/data-dropdown/data-dropdown.pug
+		include ./blocks/date-dropdown/date-dropdown.pug
+		include ./blocks/date-dropdown/date-dropdown--filter.pug
 		include ./blocks/checkbox/checkbox.pug
 		include ./blocks/radio-btns/radio-btns.pug
 		include ./blocks/toggle/toggle.pug

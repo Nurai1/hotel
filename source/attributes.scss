@@ -3,3 +3,23 @@ $green-gradient: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 $dark-shade: #1F2041;
 $purple: #BC9CFF;
 $green: #6FCF97;
+
+%material-icon-class{
+  //**Кроссбраузерность иконки
+  font-family: "Material Icons";
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+%word-title-style{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
