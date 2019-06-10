@@ -4,6 +4,7 @@
   display:inline-flex;
   align-items: center;
   text-align: center;
+}
 
   .rate-btn__star{
     cursor:pointer;
@@ -25,4 +26,3 @@
   .rate-btn__star_active{
     @include material-icon('star');
   }
-}

@@ -95,22 +95,13 @@
   font-weight: normal;
   font-style: normal; }
 @charset "UTF-8";
-.date-dropdown__part__arrow {
+.date-dropdown__arrow {
   font-family: "Material Icons";
   direction: ltr;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga'; }
-
-.buttons span {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
 
 .form-el-container__title {
   font-family: Montserrat;
@@ -132,6 +123,10 @@
   color: rgba(31, 32, 65, 0.5); }
 
 .form-el-container {
+  display: inline-block;
+  margin-bottom: 20px; }
+
+#expanded {
   display: inline-block; }
 
 body {
@@ -2733,29 +2728,36 @@ body {
   width: 218px;
   height: 195px;
   display: inline-block; }
-
-.btn_purple_hover {
-  opacity: 0.5; }
-
-.btn_purple-border_hover {
-  border-color: rgba(188, 156, 255, 0.5); }
-
-span.btn-word-purple {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #BC9CFF;
-  margin-right: 20px; }
-
-span.btn-word {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 20px; }
+  .buttons span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041; }
+  .buttons .btn_purple_hover {
+    margin: 16px 0 0 13px;
+    opacity: 0.5; }
+  .buttons .btn_purple-border_hover {
+    margin: 30px 0 31px 13px;
+    border-color: rgba(188, 156, 255, 0.5); }
+  .buttons span.btn-word-purple {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    margin-right: 20px; }
+  .buttons span.btn-word {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    margin-right: 20px; }
 
 .btn {
   display: inline-block;
+  box-sizing: border-box;
   padding: 15px 20px 14px;
   border-radius: 22px;
   font-family: Montserrat;
@@ -2773,6 +2775,7 @@ span.btn-word {
 
 .btn_purple-border {
   box-sizing: border-box;
+  padding: 13px 18px 12px;
   border: 2px solid #BC9CFF;
   background: #fff;
   color: #bc9cff; }
@@ -2882,17 +2885,6 @@ span.btn-word {
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     border-radius: 20px; }
 
-.text-field {
-  width: 320px;
-  display: inline-block; }
-
-.text-field__text {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041; }
-
 .text-field__input {
   width: 320px;
   height: 44px;
@@ -2904,7 +2896,7 @@ span.btn-word {
   color: rgba(31, 32, 65, 0.25);
   outline: 0; }
 
-.text-field__input:hover, .text-field__input:focus {
+.text-field__input--hoverfocus, .text-field__input:hover, .text-field__input:focus {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75); }
 
@@ -2912,10 +2904,6 @@ span.btn-word {
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.25); }
-
-.text-field_sub {
-  width: 320px;
-  display: inline-block; }
 
 .text-field__input_sub {
   width: 267px; }
@@ -2938,8 +2926,7 @@ span.btn-word {
     content: "\e5c8"; }
 
 .dropdown-wrapper {
-  display: inline-block;
-  width: 320px; }
+  display: inline-block; }
 
 .btn-dropdown {
   display: inline-block;
@@ -2951,8 +2938,7 @@ span.btn-word {
   box-sizing: border-box;
   padding: 12.56px 0 13.44px 15px;
   border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  margin-top: 20px; }
+  border-top-right-radius: 2px; }
   .btn-dropdown .btn-dropdown-text {
     color: rgba(31, 32, 65, 0.75); }
   .btn-dropdown .btn-dropdown__arrow {
@@ -2960,8 +2946,6 @@ span.btn-word {
     align-items: center;
     text-align: center;
     float: right;
-    width: 44px;
-    height: 44px;
     cursor: pointer;
     font-family: 'Material Icons';
     direction: ltr;
@@ -2970,7 +2954,8 @@ span.btn-word {
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
     transform: rotateZ(90deg);
-    margin-top: 3px; }
+    margin-top: 2px;
+    margin-right: 17px; }
     .btn-dropdown .btn-dropdown__arrow:before {
       content: "\e5e1"; }
 
@@ -3045,6 +3030,9 @@ span.btn-word {
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer; }
 
+.dropdown_features-wrapper {
+  width: 266px; }
+
 .btn-dropdown_features {
   width: 266px;
   height: 44px; }
@@ -3090,7 +3078,7 @@ span.btn-word {
     line-height: 18px;
     color: rgba(31, 32, 65, 0.75); }
 
-.date-dropdown__part__arrow {
+.date-dropdown__arrow {
   display: inline-block;
   transform: rotate(90deg);
   position: relative;
@@ -3098,7 +3086,7 @@ span.btn-word {
   left: 5px;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer; }
-  .date-dropdown__part__arrow:before {
+  .date-dropdown__arrow:before {
     content: "\e5e1"; }
 
 .date-dropdown__part-from {
@@ -3244,11 +3232,18 @@ span.btn-word {
     background: none;
     cursor: pointer; }
 
-.date-dropdown--filter input {
-  width: 266px; }
+.text-field__input--filter {
+  width: 266px;
+  margin-left: -19px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.text-field__input--filter::placeholder {
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75); }
 
 .date-dropdown--filter__arrow {
-  left: 70px; }
+  top: 3px;
+  left: 238px; }
 
 .checkbox {
   width: 222px;
@@ -3355,47 +3350,46 @@ span.btn-word {
 
 .toggle {
   width: 260px;
-  height: 65px;
+  height: 24px;
   display: inline-block; }
-  .toggle .toggle__text {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;
-    margin-bottom: 16px; }
-  .toggle input[type="checkbox"]#specialOffer {
-    display: none; }
-  .toggle .toggle__btn {
-    position: relative;
-    left: 50px;
-    color: rgba(31, 32, 65, 0.75);
-    cursor: pointer; }
-  .toggle .toggle__btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 40px;
-    height: 20px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 10px; }
-  .toggle .toggle__btn:after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -46px;
-    width: 12px;
-    height: 12px;
-    background: rgba(31, 32, 65, 0.25);
-    border-radius: 10px; }
-  .toggle input[type="checkbox"]#specialOffer:checked ~ .toggle__btn:after {
-    left: -26px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-  .toggle input[type="checkbox"]#specialOffer:checked ~ .toggle__btn:before {
-    border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+input[type="checkbox"]#specialOffer {
+  display: none; }
+
+.toggle__btn {
+  position: relative;
+  left: 50px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer; }
+
+.toggle__btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px; }
+
+.toggle__btn:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -46px;
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px; }
+
+input[type="checkbox"]#specialOffer:checked ~ .toggle__btn:after {
+  left: -26px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+input[type="checkbox"]#specialOffer:checked ~ .toggle__btn:before {
+  border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
 .like-btn {
   width: 40px;
@@ -3406,34 +3400,36 @@ span.btn-word {
   border-radius: 10px;
   cursor: pointer;
   display: inline-block; }
-  .like-btn .like-btn__sum {
-    text-align: center;
-    position: relative;
-    top: -3px;
-    width: 6px;
-    height: 13px;
-    font-size: 10px;
-    line-height: 12px;
-    color: rgba(31, 32, 65, 0.25);
-    display: inline-block; }
-  .like-btn .like-btn__heart {
-    width: 20px;
-    heght: 20px;
-    text-align: center;
-    position: relative;
-    top: -2px;
-    font-size: 10px;
-    line-height: 9px;
-    display: inline-block;
-    color: rgba(31, 32, 65, 0.25);
-    font-family: 'Material Icons';
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga'; }
-    .like-btn .like-btn__heart:before {
-      content: "\e87e"; }
+
+.like-btn__sum {
+  text-align: center;
+  position: relative;
+  top: -3px;
+  width: 6px;
+  height: 13px;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(31, 32, 65, 0.25);
+  display: inline-block; }
+
+.like-btn__heart {
+  width: 20px;
+  heght: 20px;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  font-size: 10px;
+  line-height: 9px;
+  display: inline-block;
+  color: rgba(31, 32, 65, 0.25);
+  font-family: 'Material Icons';
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga'; }
+  .like-btn__heart:before {
+    content: "\e87e"; }
 
 .like-btn_active {
   border-color: #BC9CFF; }
@@ -3450,23 +3446,25 @@ span.btn-word {
   display: inline-flex;
   align-items: center;
   text-align: center; }
-  .rate-btn .rate-btn__star {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 20px;
-    font-family: 'Material Icons';
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-    color: #BC9CFF; }
-    .rate-btn .rate-btn__star:before {
-      content: "\e83a"; }
-  .rate-btn .rate-btn__star_active:before {
-    content: "\e838"; }
+
+.rate-btn__star {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: 'Material Icons';
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: #BC9CFF; }
+  .rate-btn__star:before {
+    content: "\e83a"; }
+
+.rate-btn__star_active:before {
+  content: "\e838"; }
 
 .expandable-checkbox {
   width: 266px;
@@ -3600,6 +3598,8 @@ label.rich-checkbox__btn {
 
 .comment__like {
   margin-left: 4px; }
+  .comment__like .like-btn {
+    margin: 0; }
 
 .comment__text {
   display: inline-block;
@@ -3607,10 +3607,84 @@ label.rich-checkbox__btn {
   position: relative;
   top: -25px; }
 
+.dropdown_guests--expanded-filled#expanded .adults-minus {
+  border-color: rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.5); }
+
+.dropdown_guests--expanded-filled#expanded .kids-minus {
+  border-color: rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.5); }
+
 .logo {
   margin: 30px 63px 65px 30px; }
 
 .form-el__wrapper {
   width: 1260px;
   margin-left: 140px;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.form-el__wrapper__first-col, .form-el__wrapper__fourth-col {
+  width: 320px;
+  margin-right: 126px; }
+
+.form-el__wrapper__second-col, .form-el__wrapper__fifth-col {
+  width: 320px;
+  margin-right: 72px; }
+
+.form-el__wrapper__third-col, .form-el__wrapper__sixth-col {
+  width: 320px; }
+
+.form-el__wrapper__first-col, .form-el__wrapper__second-col,
+.form-el__wrapper__third-col {
+  margin-bottom: 100px; }
+
+.text-field__input--masked {
+  margin-bottom: 40px; }
+
+.date-dropdown {
+  margin-bottom: 40.56px; }
+
+.text-field__input--filter {
+  margin-bottom: 41px; }
+
+.dropdown_features {
+  margin-bottom: 54.44px; }
+
+.expandable-checkbox--default {
+  margin-bottom: 49px; }
+
+.expandable-checkbox--expanded {
+  margin-bottom: 44.44px; }
+
+.checkbox {
+  margin-bottom: 40.88px; }
+
+.radio-btns {
+  margin-bottom: 36.56px; }
+
+.toggle--disabled {
+  margin-bottom: 44.44px; }
+
+.like-btn {
+  margin-bottom: 40px;
+  margin-top: 16px; }
+
+.rate-btn_partFilled {
+  margin-right: 20px;
+  margin-top: 16px; }
+
+.price-range {
+  margin-bottom: 44.56px; }
+
+.buttons {
+  margin-bottom: 40px; }
+
+.btn_with-arrow {
+  margin-bottom: 40px; }
+
+.icon-text-list {
+  margin-right: 160px; }
+
+.comment {
+  margin-top: 10px; }

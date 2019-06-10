@@ -12595,9 +12595,6 @@ module.exports = __webpack_require__.p + "images/comment-author.png";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__like_btn_like_btn_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__rate_btn_rate_btn_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__checkbox_expandable_checkbox_expandable_checkbox_js__);
-
 
 
 
@@ -12916,19 +12913,6 @@ $('.bed-minus, .bed-plus').click(function(){
       $(this).addClass('rate-btn__star_active');
     });
   });
-});
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {  var rotateArrow = 90;
-$('.checkbox__text__arrow').click(function(){
-  $('.expandable-checkbox-wrapper').slideToggle();
-  rotateArrow+=180;
-  $(this).css('transform', 'rotateZ('+rotateArrow+'deg)');
 });
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

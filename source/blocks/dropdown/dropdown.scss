@@ -1,6 +1,5 @@
 .dropdown-wrapper{
   display:inline-block;
-  width:320px;
 }
 
 .btn-dropdown{
@@ -14,7 +13,6 @@
   padding: 12.56px 0 13.44px 15px;
   border-top-left-radius:2px;
   border-top-right-radius:2px;
-  margin-top: 20px;
 
   .btn-dropdown-text{
     color: fade-out($dark-shade, .25);
@@ -25,8 +23,6 @@
     align-items: center;
     text-align: center;
     float:right;
-    width:44px;
-    height:44px;
     cursor: pointer;
     // Иконки под разные браузера
     font-family: 'Material Icons';
@@ -37,7 +33,8 @@
     font-feature-settings: 'liga';
     @include material-icon('arrow_forward_ios');
     transform: rotateZ(90deg);
-    margin-top: 3px;
+    margin-top: 2px;
+    margin-right: 17px;
   }
 }
 

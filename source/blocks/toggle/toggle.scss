@@ -1,16 +1,8 @@
 .toggle{
   width:260px;
-  height:65px;  
+  height:24px;
   display: inline-block;
-
-  .toggle__text{
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color:$dark-shade;
-    margin-bottom: 16px;
-  }
+}
 
   input[type="checkbox"]#specialOffer{
     display:none;
@@ -57,4 +49,3 @@
       border-color: $purple-gradient;
     }
   }
-}

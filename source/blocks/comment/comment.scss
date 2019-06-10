@@ -4,8 +4,6 @@
   display: inline-block;
 }
 
-
-
 .comment__author{
   margin-bottom:12px;
 
@@ -35,11 +33,14 @@
 
 .comment__like{
   margin-left:4px;
+  .like-btn{
+    margin:0;
+  }
 }
 
 .comment__text{
   display:inline-block;
   margin-left:58px;
   position:relative;
-  top:-25px;
+  top: -25px;
 }

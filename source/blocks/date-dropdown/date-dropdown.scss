@@ -32,7 +32,8 @@
     color: fade-out($dark-shade, .25);
   }
 }
-  .date-dropdown__part__arrow{
+
+  .date-dropdown__arrow{
     display: inline-block;
     @extend %material-icon-class;
     @include material-icon("arrow_forward_ios");

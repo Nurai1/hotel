@@ -7,7 +7,7 @@
   border-radius: 10px;
   cursor:pointer;
   display:inline-block;
-
+}
 
   .like-btn__sum{
     text-align: center;
@@ -40,7 +40,6 @@
     font-feature-settings: 'liga';
     @include material-icon('favorite_border');
   }
-}
 
 .like-btn_active{
   border-color: $purple;
