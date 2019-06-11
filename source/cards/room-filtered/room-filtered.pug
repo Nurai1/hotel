@@ -1,0 +1,10 @@
+.room-filtered.cards-wrapper
+  span.room-filtered__number №888
+  span.room-filtered__feature люкс
+  span.room-filtered__price <strong>9990Р</strong> в сутки
+  include ./../../blocks/date-dropdown/date-dropdown.pug
+  span.room-filter__dropdown
+    +form-el-container("гости")
+      include ./../../blocks/dropdown/_guests/_guests.pug	
+  span.cards__accauntBtn
+    include ./../../blocks/buttons/btn_with-arrow/btn_with-arrow.pug

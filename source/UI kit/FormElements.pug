@@ -1,9 +1,4 @@
-mixin form-el-container(title, additional)
-  .form-el-container
-    span.form-el-container__title= title
-    span.form-el-container__additional-word= additional  
-    <br>
-    block  
+
 
 div(class="form-el")
   include ./../blocks/logo/logo.pug
@@ -26,6 +21,7 @@ div(class="form-el")
         
     div(class="form-el__wrapper__second-col")
       include ./../blocks/checkbox/checkbox.pug
+      +form-el-container('radio buttons')
       include ./../blocks/radio-btns/radio-btns.pug
       +form-el-container('toggle')
         include ./../blocks/toggle/toggle.pug

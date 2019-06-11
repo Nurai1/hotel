@@ -28,5 +28,12 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './blocks/comment/comment.scss';
 @import './blocks/dropdown/_guests/_guests--expanded-filled.scss';
 
-//**UI Kit: расположение form elements
-@import './UI kit/FormElements.scss';
+//**UI Kit: form elements
+//@import './UI kit/FormElements.scss';
+
+//**UI Kit: Cards
+@import './cards/cards.scss';
+@import './cards/signUp/signUp.scss';
+@import './cards/signIn/signIn.scss';
+@import './cards/room-filter/room-filter.scss';
+@import './cards/room-filtered/room-filtered.scss';

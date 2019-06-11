@@ -123,8 +123,7 @@
   color: rgba(31, 32, 65, 0.5); }
 
 .form-el-container {
-  display: inline-block;
-  margin-bottom: 20px; }
+  display: inline-block; }
 
 #expanded {
   display: inline-block; }
@@ -3300,13 +3299,6 @@ body {
   width: 221px;
   height: 55px;
   display: inline-block; }
-  .radio-btns .radio-btns__text {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;
-    margin-bottom: 16px; }
   .radio-btns .radio-btns-wrapper {
     display: inline-block; }
     .radio-btns .radio-btns-wrapper .radio-btns__btn[for="man"] {
@@ -3615,76 +3607,59 @@ label.rich-checkbox__btn {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.5); }
 
-.logo {
-  margin: 30px 63px 65px 30px; }
+.cards-wrapper {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 32px 30px; }
 
-.form-el__wrapper {
-  width: 1260px;
-  margin-left: 140px;
-  display: flex;
-  flex-wrap: wrap; }
+.cards__input {
+  margin-bottom: 10px; }
 
-.form-el__wrapper__first-col, .form-el__wrapper__fourth-col {
-  width: 320px;
-  margin-right: 126px; }
+.cards__title {
+  display: inline-block;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  margin-bottom: 20px; }
 
-.form-el__wrapper__second-col, .form-el__wrapper__fifth-col {
-  width: 320px;
-  margin-right: 72px; }
+.btn_cards {
+  float: right; }
 
-.form-el__wrapper__third-col, .form-el__wrapper__sixth-col {
-  width: 320px; }
-
-.form-el__wrapper__first-col, .form-el__wrapper__second-col,
-.form-el__wrapper__third-col {
-  margin-bottom: 100px; }
-
-.text-field__input--masked {
-  margin-bottom: 40px; }
-
-.date-dropdown {
-  margin-bottom: 40.56px; }
-
-.text-field__input--filter {
-  margin-bottom: 41px; }
-
-.dropdown_features {
-  margin-bottom: 54.44px; }
-
-.expandable-checkbox--default {
-  margin-bottom: 49px; }
-
-.expandable-checkbox--expanded {
-  margin-bottom: 44.44px; }
-
-.checkbox {
-  margin-bottom: 40.88px; }
-
-.radio-btns {
-  margin-bottom: 36.56px; }
-
-.toggle--disabled {
-  margin-bottom: 44.44px; }
-
-.like-btn {
-  margin-bottom: 40px;
-  margin-top: 16px; }
-
-.rate-btn_partFilled {
-  margin-right: 20px;
-  margin-top: 16px; }
-
-.price-range {
-  margin-bottom: 44.56px; }
-
-.buttons {
-  margin-bottom: 40px; }
-
-.btn_with-arrow {
-  margin-bottom: 40px; }
-
-.icon-text-list {
-  margin-right: 160px; }
-
-.comment {
+.cards__text {
+  display: inline-block;
   margin-top: 10px; }
+
+.cards__accauntBtn {
+  display: inline-block;
+  margin: 20px 0 30px; }
+
+.signUp {
+  width: 380px;
+  height: 646px; }
+
+.signUp__datebirth {
+  display: inline-block;
+  margin-bottom: 20px; }
+
+.signIn {
+  width: 380px;
+  height: 358px; }
+
+.room-filter {
+  width: 380px;
+  height: 374px; }
+
+.room-filter__dropdown {
+  display: inline-block;
+  margin-top: 20px; }
+
+.room-filtered {
+  width: 380px;
+  height: 511px; }
