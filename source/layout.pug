@@ -4,9 +4,11 @@ html
 		meta(charset = 'utf-8')
 		title Pug file
 	body
+		//- Миксины
 		include ./mixins/form-element-container.pug
-		//include ./UI kit/FormElements.pug
-		include ./cards/signUp/signUp.pug
-		include ./cards/signIn/signIn.pug
-		include ./cards/room-filter/room-filter.pug
-		include ./cards/room-filtered/room-filtered.pug
+		include ./blocks/buttons/btn_with-arrow/btn_with-arrow.pug
+		include ./blocks/rate-btn/rate-btn.pug
+		include ./UI Kit/cards/room-properties/room-properties.pug
+		
+		include ./UI kit/cards/cards.pug
+		//-include ./UI kit/FormElements/FormElements.pug

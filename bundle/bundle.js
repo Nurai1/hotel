@@ -12563,6 +12563,12 @@ this.maxHours=t.getHours(),this.maxMinutes=t.getMinutes(),this.d.lastSelectedDat
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__comment_author_png__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__comment_author_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__comment_author_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__room_photo1_png__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__room_photo1_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__room_photo1_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__room_photo2_png__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__room_photo2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__room_photo2_png__);
+
+
 
 
 
@@ -12847,22 +12853,21 @@ $('.bed-minus, .bed-plus').click(function(){
       miltipleDates:true,
       range: true,
       multipleDatesSeparator: '-',
-      minDate: new Date(),
       clearButton: true
 
     });
 
   //**скрыть блок календаря
-  $('.date-dropdown__calendar').hide();
+  $('.date-dropdown > .date-dropdown__calendar').hide();
   //**показать календарь при нажатии на текстовые поля или стрелку
   $('.dateFrom, .dateTo').focus(function(){
-    $('.date-dropdown__calendar').show();
+    $('.date-dropdown > .date-dropdown__calendar').show();
   });
   $('.date-dropdown__part > .date-dropdown__part__arrow').click(function(){
-    $('.date-dropdown__calendar').show();
+    $('.date-dropdown > .date-dropdown__calendar').show();
   });
   //**блок фунционала кнопок
-  $('.datepicker--button').first().text('очистить').addClass('datepicker--button-clear');
+  $('.datepicker--button').text('очистить').addClass('datepicker--button-clear');
   $('.datepicker--buttons').append('<span class="datepicker--button-ready">применить</span>');
 
   $('.datepicker--button-clear').click(function(){
@@ -12916,6 +12921,45 @@ $('.bed-minus, .bed-plus').click(function(){
 });
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/room-photo1.png";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/room-photo2.png";
 
 /***/ })
 /******/ ]);

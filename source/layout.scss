@@ -28,12 +28,14 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './blocks/comment/comment.scss';
 @import './blocks/dropdown/_guests/_guests--expanded-filled.scss';
 
-//**UI Kit: form elements
-//@import './UI kit/FormElements.scss';
+//**UI Kit: Template
+//@import './UI kit/FormElements/FormElements.scss';
+@import './UI Kit/cards/cards.scss';
+@import './UI kit/UIKit.scss';
 
 //**UI Kit: Cards
-@import './cards/cards.scss';
-@import './cards/signUp/signUp.scss';
-@import './cards/signIn/signIn.scss';
-@import './cards/room-filter/room-filter.scss';
-@import './cards/room-filtered/room-filtered.scss';
+@import './UI Kit/cards/signUp/signUp.scss';
+@import './UI Kit/cards/signIn/signIn.scss';
+@import './UI Kit/cards/room-filter/room-filter.scss';
+@import './UI Kit/cards/room-filtered/room-filtered.scss';
+@import './UI Kit/cards/room-properties/room-properties.scss';

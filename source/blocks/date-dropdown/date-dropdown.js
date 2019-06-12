@@ -5,22 +5,21 @@ $( function() {
       miltipleDates:true,
       range: true,
       multipleDatesSeparator: '-',
-      minDate: new Date(),
       clearButton: true
 
     });
 
   //**скрыть блок календаря
-  $('.date-dropdown__calendar').hide();
+  $('.date-dropdown > .date-dropdown__calendar').hide();
   //**показать календарь при нажатии на текстовые поля или стрелку
   $('.dateFrom, .dateTo').focus(function(){
-    $('.date-dropdown__calendar').show();
+    $('.date-dropdown > .date-dropdown__calendar').show();
   });
   $('.date-dropdown__part > .date-dropdown__part__arrow').click(function(){
-    $('.date-dropdown__calendar').show();
+    $('.date-dropdown > .date-dropdown__calendar').show();
   });
   //**блок фунционала кнопок
-  $('.datepicker--button').first().text('очистить').addClass('datepicker--button-clear');
+  $('.datepicker--button').text('очистить').addClass('datepicker--button-clear');
   $('.datepicker--buttons').append('<span class="datepicker--button-ready">применить</span>');
 
   $('.datepicker--button-clear').click(function(){

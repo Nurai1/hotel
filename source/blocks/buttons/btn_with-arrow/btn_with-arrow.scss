@@ -5,10 +5,6 @@
   width:320px;
   height:45px;
   text-align:center;
-    span{
-      position:relative;
-      top:-5px;
-    }
 }
 
 .btn_with-arrow:hover{
@@ -16,6 +12,8 @@
 }
 
 .arrow-at-btn{
+  float:right;
   position:relative;
-  left:70px;
+  top:-3px;
+  right:-5px;
 }
