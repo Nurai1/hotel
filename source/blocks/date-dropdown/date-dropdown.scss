@@ -1,6 +1,7 @@
 .date-dropdown{
   width:320px;
   display: inline-block;
+  position: relative;
 }
 
 .date-dropdown__part{
@@ -54,6 +55,11 @@
 .date-dropdown__calendar{
   width:320px;
   height: 369px;
+}
+
+.date-dropdown__calendar_abs-pos{
+  position: absolute;
+  z-index: 10;
 }
 
 .dateFrom{
