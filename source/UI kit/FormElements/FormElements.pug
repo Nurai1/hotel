@@ -15,7 +15,7 @@ div(class="form-el")
       +form-el-container("filter date dropdown")
         include ./../../blocks/date-dropdown/date-dropdown--filter--example.pug
       +form-el-container("subscription text field")
-        include ./../../blocks/text-field/text-field_sub.pug
+        +text-field_sub('Email')
         
     div(class="form-el__wrapper__second-col")
       include ./../../blocks/checkbox/checkbox.pug

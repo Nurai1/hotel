@@ -1,6 +1,8 @@
 @import './attributes.scss';
 @import './body.scss';
 $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
+@import'~material-design-icons-iconfont/src/_mixins.scss';
+@import'~material-design-icons-iconfont/src/_variables.scss';
 @import '~material-design-icons-iconfont/src/material-design-icons.scss';
 @import './blocks/buttons/buttons.scss';
 @import './blocks/buttons/btn.scss';
@@ -29,7 +31,7 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './blocks/dropdown/_guests/_guests--expanded-filled.scss';
 
 //**UI Kit: Template
-//@import './UI kit/FormElements/FormElements.scss';
+//-@import './UI kit/FormElements/FormElements.scss';
 @import './UI Kit/cards/cards.scss';
 @import './UI kit/UIKit.scss';
 
@@ -39,3 +41,9 @@ $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dis
 @import './UI Kit/cards/room-filter/room-filter.scss';
 @import './UI Kit/cards/room-filtered/room-filtered.scss';
 @import './UI Kit/cards/room-properties/room-properties.scss';
+
+//**UI Kit: headers&footers
+@import './UI Kit/headers&footers/header.scss';
+@import './UI Kit/headers&footers/headers&footers.scss';
+@import './UI Kit/headers&footers/footer-creative.scss';
+@import './UI Kit/headers&footers/footer-widgetsNcopyright.scss';
