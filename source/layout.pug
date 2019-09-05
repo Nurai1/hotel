@@ -1,17 +1,9 @@
-doctype html
-html
-	head
-		meta(charset = 'utf-8')
-		title Pug file
-	body
-		//** Миксины
-		include ./blocks/text-field/text-field_sub.pug
-		include ./mixins/form-element-container.pug
-		include ./blocks/buttons/btn_with-arrow/btn_with-arrow.pug
-		include ./blocks/rate-btn/rate-btn.pug
-		include ./UI Kit/cards/room-properties/room-properties.pug
-		include ./UI Kit/headers&footers/header.pug
+//--   Миксины
+include ./blocks/text-field/text-field_sub.pug
+include ./mixins/form-element-container.pug
+include ./blocks/buttons/btn_with-arrow/btn_with-arrow.pug
+include ./blocks/rate-btn/rate-btn.pug
+include ./UI Kit/cards/room-properties/room-properties.pug
+include ./UI Kit/headers&footers/header.pug
+include ./UI Kit/colors&type/color-mixin.pug
 		
-		include ./UI kit/cards/cards.pug
-		//-include ./UI kit/FormElements/FormElements.pug
-		//-include ./UI Kit/headers&footers/headers&footers.pug

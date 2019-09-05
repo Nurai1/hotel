@@ -1,6 +1,5 @@
 .text-field__input--filter{
     width: 266px;
-    margin-left: -19px;
     color: fade-out($dark-shade, .25);
   }
 
@@ -10,6 +9,6 @@
 }
 
 .date-dropdown--filter__arrow{
-  top:3px;
-  left:238px;
+  top: 10px;
+  left:-25px;
 }

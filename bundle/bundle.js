@@ -11481,7 +11481,6 @@ __webpack_require__(12);
 
 
 
-//import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 
 /***/ }),

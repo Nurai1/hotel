@@ -4045,6 +4045,102 @@ label.rich-checkbox__btn {
 .footer-WnC-copyrigh__brands {
   float: right;
   padding: 23px 0; }
+
+.colorsNtype-wrapper {
+  margin: 0 13.26389% 0 10.41667%; }
+
+.colors-container {
+  width: 274px;
+  height: 610px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.color-wrapper {
+  width: 274px;
+  height: 70px;
+  display: inline-block;
+  position: relative; }
+
+.color-bg {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px; }
+
+.color-text {
+  position: absolute;
+  top: 6px;
+  width: 159px;
+  height: 57px;
+  display: inline-block;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 29px;
+  color: #1F2041; }
+
+.fontsSize-container {
+  width: 403px;
+  height: 321px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right; }
+
+.fontsSize__part {
+  display: inline-block;
+  width: 403px; }
+  .fontsSize__part .fontsSize__part__title {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: normal;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25); }
+  .fontsSize__part ._titleH1 {
+    width: 29px;
+    top: -29px; }
+  .fontsSize__part ._titleH2 {
+    width: 31px;
+    top: -22px; }
+  .fontsSize__part ._titleH3 {
+    width: 33px; }
+  .fontsSize__part ._titleBody {
+    width: 37px;
+    top: -24px; }
+  .fontsSize__part .fontsSize__part__text {
+    display: inline-block;
+    width: 336px; }
+
+.bigTitle {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041; }
+
+.medTitle {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041; }
+
+.smallTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041; }
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

@@ -8,6 +8,5 @@ import './fonts/fonts.scss';
 import './images/images.js';
 import './layout.scss';
 import './blocks/joinAll.js'
-import '@fontawesome/fontawesome-free/css/all.min.css';
-import '@fontawesome/fontawesome-free/js/all.min';
-//import 'material-design-icons-iconfont/dist/material-design-icons.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min';
