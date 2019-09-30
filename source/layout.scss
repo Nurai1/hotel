@@ -1,10 +1,9 @@
 @import './attributes.scss';
-@import './body.scss';
 $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 @import'~material-design-icons-iconfont/src/_mixins.scss';
 @import'~material-design-icons-iconfont/src/_variables.scss';
 @import '~material-design-icons-iconfont/src/material-design-icons.scss';
-@import './blocks/buttons/buttons.scss';
+@import './blocks/buttons/UIKit-buttons.scss';
 @import './blocks/buttons/btn.scss';
 @import './blocks/buttons/btn_purple/btn_purple.scss';
 @import './blocks/buttons/btn_purple-border/btn_purple-border.scss';

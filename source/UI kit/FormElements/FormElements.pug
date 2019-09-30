@@ -2,13 +2,12 @@ doctype html
 html
   head
     meta(charset = 'utf-8')
-    title Pug file
+    title Form elements
   body
     include ./../../mixins/mixins.pug
-    include ./form-element-container.pug
     div(class="form-el")
       include ./../../blocks/logo/logo.pug
-      div(class="UIKit__wrapper form-el__wrapper")
+      div(class="page__wrapper form-el__wrapper")
         
         div(class="form-el__wrapper__first-col")
           +form-el-container("text field", 'default')
@@ -41,7 +40,7 @@ html
             
         div(class="form-el__wrapper__third-col")
           include ./../../blocks/range-slider/range-slider.pug
-          include ./../../blocks/buttons/buttons.pug
+          include ./../../blocks/buttons/UIKit-buttons.pug
           +btn_with-arrow("перейти к оплате")
           +form-el-container("pagination")
             include ./../../blocks/pagination/pagination.pug
@@ -57,12 +56,13 @@ html
         div(class="form-el__wrapper__fifth-col")
           +form-el-container("dropdown")
             include ./../../blocks/dropdown/_guests/_guests--expanded.pug	   
-          include ./../../blocks/checkbox/rich-checkbox/rich-checkbox.pug 
+          +rich-checkbox("rich checkbox buttons")
 
         div(class="form-el__wrapper__sixth-col")
           +form-el-container("dropdown")
             include ./../../blocks/dropdown/_guests/_guests--expanded-filled.pug
-          include ./../../blocks/bullet-list/bullet-list.pug
+          +bullet-list('bullet-list')
+          //include ./../../blocks/bullet-list/bullet-list.pug
 
         include ./../../blocks/icon-text-list/icon-text-list.pug
         include ./../../blocks/comment/comment.pug

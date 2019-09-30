@@ -2,12 +2,12 @@ doctype html
 html
   head
     meta(charset = 'utf-8')
-    title Pug file
+    title Cards
   body
     include ./../../mixins/mixins.pug
     div(class="cards")
       include ./../../blocks/logo/logo.pug
-      div(class="UIKit__wrapper cards__wrapper")
+      div(class="page__wrapper cards__wrapper")
         div(class="cards__wrapper__first-col")
           include ./room-filter/room-filter.pug
           include ./signUp/signUp.pug

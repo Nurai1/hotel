@@ -7,10 +7,15 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    'cards/cards' : './source/UI kit/cards/cards.js',
-    'colorsNtype/colorsNtype' : './source/UI kit/colors&type/colorsNtype.js',
-    "headersNfooters/headersNfooters" : './source/UI kit/headers&footers/headersNfooters.js',
-    "FormElements/FormElements" : './source/UI kit/FormElements/FormElements.js'
+    'UIKit/cards/cards' : './source/UI kit/cards/cards.js',
+    'UIKit/colorsNtype/colorsNtype' : './source/UI kit/colors&type/colorsNtype.js',
+    "UIKit/headersNfooters/headersNfooters" : './source/UI kit/headers&footers/headersNfooters.js',
+    "UIKit/FormElements/FormElements" : './source/UI kit/FormElements/FormElements.js',
+    "website/landing/landing" : "./source/Website Pages/landing/landing.js",
+    "website/search-room/search-room" : "./source/Website Pages/search-room/search-room.js",
+    "website/room-details/room-details" : "./source/Website Pages/room-details/room-details.js",
+    'website/registration/registration' : './source/Website Pages/registration/registration.js',
+    'website/signIn/signIn' : './source/Website Pages/signIn/signIn.js'
   },
   output: {
     path: path.resolve(__dirname, 'bundle'),
@@ -62,7 +67,7 @@ module: {
        }]
           })
        },
-      /* {
+      /* { не подходит для работы
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
          loader: 'file-loader',
           options: {
@@ -84,20 +89,23 @@ module: {
    },
      /*{
       test: /\.(jpe?g|png|gif|svg)$/i,
-       loader: 'file-loader?limit=1024',
+       loader: 'file-loader?limit=100000',
         options: {
+          fallback: 'url-loader',
           name: '[name].[ext]',
           outputPath: 'images/',
           emitFile: true,
           useRelativePath: true
      }
    },*/
-   {
+ {
     test: /\.(jpe?g|png|gif|svg)$/i,
      loader: "url-loader",
       options: {
+        limit: 8192,
         name: '[name].[ext]',
         outputPath: 'images/',
+        publicPath: '../../images/',
         emitFile: true,
         useRelativePath: true
    }
@@ -107,36 +115,58 @@ module: {
 plugins: [
  new ExtractTextPlugin('[name].css'),
  new HtmlWebpackPlugin({
-	 filename: 'index.html',
-	 template: './source/layout.pug'
- }),
- new HtmlWebpackPlugin({
-	 filename: 'cards/cards.html',
+	 filename: 'UIKit/cards/cards.html',
    template: './source/UI kit/cards/cards.pug',
-   //chunks: ["cards/cards", "images", "fonts"]
-   excludeChunks: [ 'colorsNtype/colorsNtype', 'FormElements/FormElements', 'headersNfooters/headersNfooters' ],
+   chunks: ["UIKit/cards/cards"],
    fixAssets: true
  }),
  new HtmlWebpackPlugin({
-  filename: 'colorsNtype/colorsNtype.html',
+  filename: 'UIKit/colorsNtype/colorsNtype.html',
   template: './source/UI kit/colors&type/colorsNtype.pug',
-  excludeChunks: [ 'cards/cards', 'FormElements/FormElements', 'headersNfooters/headersNfooters'  ],
-  fixAssets: true
-  //chunks: ["colorsNtype/colorsNtype", "images", "fonts"]
+  fixAssets: true,
+  chunks: ["UIKit/colorsNtype/colorsNtype"]
  }),
  new HtmlWebpackPlugin({
-  filename: 'FormElements/FormElements.html',
+  filename: 'UIKit/FormElements/FormElements.html',
   template: './source/UI kit/FormElements/FormElements.pug',
-  excludeChunks: [ 'colorsNtype/colorsNtype', 'cards/cards', 'headersNfooters/headersNfooters'  ],
-  fixAssets: true
-  //chunks: ["FormElements/FormElements", "images", "fonts"]
+  fixAssets: true,
+  chunks: ["UIKit/FormElements/FormElements"]
  }),
  new HtmlWebpackPlugin({
-  filename: 'headersNfooters/headersNfooters.html',
+  filename: 'UIKit/headersNfooters/headersNfooters.html',
   template: './source/UI kit/headers&footers/headersNfooters.pug',
-  excludeChunks: [ 'colorsNtype/colorsNtype', 'FormElements/FormElements', 'cards/cards'  ],
-  fixAssets: true
-  //chunks: ["headersNfooters/headersNfooters", "images", "fonts"]
+  fixAssets: true,
+  chunks: ["UIKit/headersNfooters/headersNfooters"]
+ }),
+ new HtmlWebpackPlugin({
+  filename: 'website/landing/landing.html',
+  template: './source/Website Pages/landing/landing.pug',
+  fixAssets: true,
+  chunks: ["website/landing/landing"]
+ }),
+ new HtmlWebpackPlugin({
+  filename: 'website/search-room/search-room.html',
+  template: './source/Website Pages/search-room/search-room.pug',
+  fixAssets: true,
+  chunks: ["website/search-room/search-room"]
+ }),
+ new HtmlWebpackPlugin({
+   filename: 'website/room-details/room-details.html',
+   template: './source/Website Pages/room-details/room-details.pug',
+   fixAssets: true,
+   chunks: ['website/room-details/room-details']
+ }),
+ new HtmlWebpackPlugin({
+   filename: "website/registration/registration.html",
+   template: "source/Website Pages/registration/registration.pug",
+   fixAssets: true,
+   chunks: ['website/registration/registration']
+ }),
+ new HtmlWebpackPlugin({
+   filename: "website/signIn/signIn.html",
+   template: "source/Website Pages/signIn/signIn.pug",
+   fixAssets: true,
+   chunks: ['website/signIn/signIn']
  }),
  new HtmlWebpackPathAssetsFix(),
  new webpack.ProvidePlugin({

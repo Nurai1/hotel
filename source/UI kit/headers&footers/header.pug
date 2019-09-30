@@ -17,5 +17,5 @@ mixin header(isRegistered, accauntName)
           if isRegistered
             span.hf__text.accaunt-name= accauntName
           else
-            span.btn.btn_purple-border login
-            span.btn.btn_purple register
+            a.btn.btn_purple-border(href="./../signIn/signIn.html") login
+            a.btn.btn_purple(href="./../registration/registration.html") register

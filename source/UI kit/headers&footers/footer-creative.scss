@@ -26,3 +26,23 @@
 .footer-creative__brands{
   margin: 0 auto;
 }
+
+.footer__brands{
+    display: inline-block;
+    font-size: 24px;
+    color: $purple ;
+}
+
+.brands_twitter, .brands_facebook{
+  margin-right: 20px;
+}
+
+.logo__text{
+  display: inline-block;
+  color: $dark-shade;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 12.5px;
+  position: relative;
+  bottom: 15px;
+}

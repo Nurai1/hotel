@@ -65,3 +65,28 @@
     background: fade-out($dark-shade, .9);
   }
 }
+
+.logo__text{
+  display: inline-block;
+  color: $dark-shade;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 12.5px;
+  position: relative;
+  bottom: 15px;
+}
+
+.h__bold{
+  color: fade-out($dark-shade, .25);
+  font-weight: bold;
+}
+
+  .logo__text{
+    display: inline-block;
+    color: $dark-shade;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 12.5px;
+    position: relative;
+    bottom: 15px;
+  }

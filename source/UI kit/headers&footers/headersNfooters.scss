@@ -19,45 +19,12 @@
   margin-bottom: 130px;
 }
 
-.hf__text{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: fade-out($dark-shade, .5);
-}
-
-.h__bold{
-  color: fade-out($dark-shade, .25);
-  font-weight: bold;
-}
-
-.f__bold{
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
+.logo__text{
+  display: inline-block;
   color: $dark-shade;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-left: 12.5px;
+  position: relative;
+  bottom: 15px;
 }
-
-  .logo__text{
-    display: inline-block;
-    color: $dark-shade;
-    text-transform: uppercase;
-    font-size: 13px;
-    margin-left: 12.5px;
-    position: relative;
-    bottom: 15px;
-  }
-
-
-  .footer__brands{
-      display: inline-block;
-      font-size: 24px;
-      color: $purple ;
-  }
-
-  .brands_twitter, .brands_facebook{
-    margin-right: 20px;
-  }

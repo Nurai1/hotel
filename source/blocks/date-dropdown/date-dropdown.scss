@@ -179,7 +179,7 @@
         background: fade-out($purple,.75);
         //opacity: 0.25; issue with font-color
       }
-      +.-selected-.-range-from-:after{
+      +.-range-from-:after{
         content:"";
         top:0;
         left:20px;
@@ -189,7 +189,27 @@
         background: $purple-gradient;
         opacity: 0.25;
       }
+      +.-selected-.-range-from-:after{
+        content:"";
+        top:0;
+        left:20px;
+        position: absolute;
+        width:20px;
+        height: 40px;
+        background: $purple-gradient;
+        opacity: 0.25;
+      }
       +.-selected-.-range-to-:before{
+        content:"";
+        top:0;
+        left:0px;
+        position: absolute;
+        width:20px;
+        height:40px;
+        background: $purple-gradient;
+        opacity: 0.25;
+      }
+      +.-range-to-:before{
         content:"";
         top:0;
         left:0px;

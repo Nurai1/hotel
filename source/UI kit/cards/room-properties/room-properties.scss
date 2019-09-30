@@ -21,6 +21,10 @@
   display: inline-block;
   width: 270px;
   height: 151px;
+  img{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
   .__arrow{
     display: inline-block;
     font-family: 'Material Icons';
