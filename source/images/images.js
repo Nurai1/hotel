@@ -15,3 +15,4 @@ import  img from './room-photo12.png';
 import  img from './room-photo1-0.png';
 import  img from './room-photo1-1.png';
 import  img from './room-photo1-2.png';
+import  img from './signInUp-background.png';

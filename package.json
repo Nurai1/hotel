@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "layout.js",
+  "browserslist": ["ie >= 8", "last 4 version"],
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack "
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
+    "autoprefixer": "^9.6.1",
     "css-reset-and-normalize": "^2.0.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",

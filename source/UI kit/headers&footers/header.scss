@@ -31,7 +31,7 @@
     display: inline-block;
     margin-right: 30px;
   }
-
+  
   li.h__text-arrow{
     display: inline-block;
     margin-right: 20px;
@@ -76,7 +76,7 @@
   bottom: 15px;
 }
 
-.h__bold{
+.h__bold:hover{
   color: fade-out($dark-shade, .25);
   font-weight: bold;
 }

@@ -2,7 +2,8 @@ var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
-const HtmlWebpackPathAssetsFix = require('html-webpack-plugin-assets-fix')
+const HtmlWebpackPathAssetsFix = require('html-webpack-plugin-assets-fix');
+const autoprefixer = require('autoprefixer');
 const path = require('path');
 
 module.exports = {
@@ -37,6 +38,17 @@ module: {
       	  }
         }
         ,
+        {
+          loader: 'postcss-loader',
+          options: {
+              plugins: [
+                  autoprefixer({
+                      
+                    })
+                  ],
+                  sourceMap: true
+                }
+              },
         {
           loader: 'sass-loader',
           options: {

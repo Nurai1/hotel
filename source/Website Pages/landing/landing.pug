@@ -14,6 +14,7 @@ html
           +form-el-container("гости")
             include ./../../blocks/dropdown/_guests/_guests.pug	
         span.cards__accauntBtn
-          +btn_with-arrow("подобрать номер")
+          a(href='../search-room/search-room.html')
+            +btn_with-arrow("подобрать номер")
       .landing-wrapper__text Лучшие номера для вашей работы, отдыха и просто вдохновения
     include ./../../UI kit/headers&footers/footer-widgetsNcopyright.pug

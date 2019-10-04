@@ -74,15 +74,27 @@ $('.babies-plus').click(function(){
 });
 
 var sumOfGuests;
+var allKids;
 
 var writeCountGuests = function (){
-  sumOfGuests=sumOfAdults+sumOfKids+sumOfBabies;
+  allKids = sumOfKids + sumOfBabies;
+  if((sumOfAdults===1) && (allKids===1))
+    $('.btn-dropdown_guests-text').text(sumOfAdults+' взрослый, ' + allKids+" ребенок");
+  else if((sumOfAdults===1) && (allKids!==1))
+    $('.btn-dropdown_guests-text').text(sumOfAdults+' взрослый, ' + allKids+" детей");
+  else if((sumOfAdults!==1) && (allKids===1))
+    $('.btn-dropdown_guests-text').text(sumOfAdults+' взрослых, ' + allKids+" ребенок");
+  else
+    $('.btn-dropdown_guests-text').text(sumOfAdults+' взрослых, ' + allKids+" детей");
+
+  /*  old  version
+   sumOfGuests=sumOfAdults+sumOfKids+sumOfBabies;
   if((sumOfGuests>4) || (sumOfGuests==0))
     $('.btn-dropdown_guests-text').text(sumOfGuests+' гостей');
   else if((sumOfGuests<=4) && (sumOfGuests>1))
     $('.btn-dropdown_guests-text').text(sumOfGuests+' гостя');
   else
-    $('.btn-dropdown_guests-text').text(sumOfGuests+' гость');
+    $('.btn-dropdown_guests-text').text(sumOfGuests+' гость');*/
 }
 
 $('.dropdown__minus-circle').click(writeCountGuests);
