@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "layout.js",
-  "browserslist": ["ie >= 8", "last 4 version"],
+  "browserslist": [
+    "ie >= 8",
+    "last 4 version"
+  ],
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack "

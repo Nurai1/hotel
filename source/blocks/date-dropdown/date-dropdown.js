@@ -15,7 +15,7 @@ $( function() {
   $('.dateFrom, .dateTo').focus(function(){
     $('.date-dropdown > .date-dropdown__calendar').show();
   });
-  $('.date-dropdown__part > .date-dropdown__part__arrow').click(function(){
+  $('.date-dropdown__part > .date-dropdown__arrow').click(function(){
     $('.date-dropdown > .date-dropdown__calendar').show();
   });
   //**блок фунционала кнопок
